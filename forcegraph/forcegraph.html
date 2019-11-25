@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>D3 Chart Gallery</title>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+    <link rel="stylesheet" href="../src/main.css">
+    <link rel="stylesheet" href="forcegraph.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../src/main.html">Home</a></li>
+                <li><a href="../barchart/barchart.html">Bar Chart</a></li>
+                <li><a href="../linechart/linechart.html">Line Chart</a></li>
+                <li><a href="../areachart/areachart.html">Area Chart</a></li>
+                <li><a href="../scatterplot/scatterplot.html">Scatter Plot</a></li>
+                <li><a href="../piechart/piechart.html">Pie Chart</a></li>
+                <li><a href="../donutchart/donutchart.html">Donut Chart</a></li>
+                <li><a href="../stackbarchart/stackbarchart.html">Stacked Bar</a></li>
+                <li><a href="../stackareachart/stackareachart.html">Stacked Area</a></li>
+                <li><a href="../chordchart/chordchart.html">Chord Chart</a></li>
+                <li><a href="../forcegraph/forcegraph.html">Force Graph</a></li>
+                <li><a href="../clusterchart/clusterchart.html">Cluster Chart</a></li>
+                <li><a href="../packchart/pack.html">Packed Circles</a></li>
+                <li><a href="../partition/partition.html">Partition</a></li>
+                <li><a href="../treechart/treechart.html">Tree</a></li>
+                <li><a href="../treemap/treemap.html">Tree Map</a></li>
+                <li><a href="../choropleth/choropleth.html">Choropleth</a></li>
+                <li><a href="../candlestick/candlestick.html">Candlestick</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Force Graph</h1>
+            <h4>Examining the hierarchy of sample news coverage categories of The New York Times</h4>
+            <div class='chart-div'>
+                <svg id='chart'></svg>
+            </div>
+        </section>
+        <section>
+            <h3>The Force Graph</h3>
+            <p>
+                The force graph here demonstrates the relationships and flow of a sample dataset about the categories
+                that
+                the New York Times covers and subcategories. It is another made up list, and is not meant to be a full
+                representation of coverage, only to show where the categories are ultimately coming from.
+            </p>
+            <h4>Force Graph Uses</h4>
+            <p>
+                The force graph is a way to draw a visually pleasing, and interactive, graph where a set of nodes are
+                connected with a set edges.
+                The nodes typically have forces and draggability to provide the interactivty.
+                The graph can be useful to show relationships and hierarchies, especially connections between people or
+                variables.
+                It's also a ton of fun to wiggle around everywhere.
+
+            </p>
+            <h4>Marks and Channels</h4>
+            <ul>
+                <li><strong>Marks:</strong> Lines, Circles/Point, Connection</li>
+                <li><strong>Channels:</strong> Color Hue, Tilt </li>
+            </ul>
+        </section>
+    </main>
+    <script src='forcegraph.js'></script>
+</body>
+
+</html>

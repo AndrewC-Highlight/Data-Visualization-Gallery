@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>D3 Chart Gallery</title>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+    <link rel="stylesheet" href="../src/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../src/main.html">Home</a></li>
+                <li><a href="../barchart/barchart.html">Bar Chart</a></li>
+                <li><a href="../linechart/linechart.html">Line Chart</a></li>
+                <li><a href="../areachart/areachart.html">Area Chart</a></li>
+                <li><a href="../scatterplot/scatterplot.html">Scatter Plot</a></li>
+                <li><a href="../piechart/piechart.html">Pie Chart</a></li>
+                <li><a href="../donutchart/donutchart.html">Donut Chart</a></li>
+                <li><a href="../stackbarchart/stackbarchart.html">Stacked Bar</a></li>
+                <li><a href="../stackareachart/stackareachart.html">Stacked Area</a></li>
+                <li><a href="../chordchart/chordchart.html">Chord Chart</a></li>
+                <li><a href="../forcegraph/forcegraph.html">Force Graph</a></li>
+                <li><a href="../clusterchart/clusterchart.html">Cluster Chart</a></li>
+                <li><a href="../packchart/pack.html">Packed Circles</a></li>
+                <li><a href="../partition/partition.html">Partition</a></li>
+                <li><a href="../treechart/treechart.html">Tree</a></li>
+                <li><a href="../treemap/treemap.html">Tree Map</a></li>
+                <li><a href="../choropleth/choropleth.html">Choropleth</a></li>
+                <li><a href="../candlestick/candlestick.html">Candlestick</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Candlestick Chart</h1>
+            <h4>Displaying market changes in the New York Times Stock Price from 9/30/19 - 11/01/19.</h4>
+            <div id="tooltip" class="hidden">
+                <p id="value">Value</p>
+            </div>
+            <div class='chart-div'>
+                <svg id='chart'></svg>
+            </div>
+        </section>
+        <section>
+            <h3>Candlestick Chart</h3>
+            <p>
+                The candlestick chart is one of the more visually interesting charts for a very specific purpose:
+                financial measurements.
+                This particular chart analyzes real data for the NYT Stock price from 9/30/19 - 11/01/19. The chart
+                shows the a
+                recap of the price movement on the weekdays. Looking at one candlestick tick, the top line/shadow
+                displays the high for the day, the
+                bottom line/shadow displays the low from that day, while the colored body shows the open and close
+                measurement. Color is added for ease of reading,
+                with the color green signifying a higher close than open, and the red color showing a lower close than
+                open. Data found: https://finance.yahoo.com/quote/NYT/history?p=NYT
+            </p>
+            <h4>Choropleth Map Uses</h4>
+            <p>
+                The candlestick chart is a great way to analyze price movements over a period of time. It can show
+                trading patterns, with
+                displaying the open, close, high, and low for each day. At a glance it can show the overall pattern of
+                the price over time, and
+                with further delving can show the user where specifically the four pieces of information land and trend
+                at. While specifically used
+                for financial charts (movements of stocks, securities, currencies), it provides a clear and efficient
+                way of analyze patterns.
+            </p>
+            <h4>Marks and Channels</h4>
+            <ul>
+                <li><strong>Marks:</strong> Lines (shadows for the high and low), Rectangle (the body for the open and
+                    close).</li>
+                <li><strong>Channels:</strong> Color Hue (signifying the value of the close vs open), Length (amount of
+                    movement in a day), Position</li>
+            </ul>
+        </section>
+    </main>
+    <script src='candlestick.js'></script>
+</body>
+
+</html>

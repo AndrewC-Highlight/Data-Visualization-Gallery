@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>D3 Chart Gallery</title>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+    <link rel="stylesheet" href="../src/main.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../src/main.html">Home</a></li>
+                <li><a href="../barchart/barchart.html">Bar Chart</a></li>
+                <li><a href="../linechart/linechart.html">Line Chart</a></li>
+                <li><a href="../areachart/areachart.html">Area Chart</a></li>
+                <li><a href="../scatterplot/scatterplot.html">Scatter Plot</a></li>
+                <li><a href="../piechart/piechart.html">Pie Chart</a></li>
+                <li><a href="../donutchart/donutchart.html">Donut Chart</a></li>
+                <li><a href="../stackbarchart/stackbarchart.html">Stacked Bar</a></li>
+                <li><a href="../stackareachart/stackareachart.html">Stacked Area</a></li>
+                <li><a href="../chordchart/chordchart.html">Chord Chart</a></li>
+                <li><a href="../forcegraph/forcegraph.html">Force Graph</a></li>
+                <li><a href="../clusterchart/clusterchart.html">Cluster Chart</a></li>
+                <li><a href="../packchart/pack.html">Packed Circles</a></li>
+                <li><a href="../partition/partition.html">Partition</a></li>
+                <li><a href="../treechart/treechart.html">Tree</a></li>
+                <li><a href="../treemap/treemap.html">Tree Map</a></li>
+                <li><a href="../choropleth/choropleth.html">Choropleth</a></li>
+                <li><a href="../candlestick/candlestick.html">Candlestick</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Chord Chart</h1>
+            <h4>Examining Users who switched subscriptions from one brand to another (11/03/2017).</h4>
+            <div id="tooltip" class="hidden">
+                <p id="value">Value</p>
+                <p id="value2">Value2</p>
+            </div>
+            <div class='chart-div'>
+                <svg id='chart'></svg>
+            </div>
+        </section>
+        <section>
+            <h3>The Chord Chart</h3>
+            <p>
+                This chord chart analyzes users who switched their subscription to another media
+                or journalism company. It shows how many people switched from Company A to Company B in the
+                form of a chord chart. The data used is not real in the slightest. The values were simply
+                generated randomly from 10-80.
+            </p>
+            <h4>Chord Chart Uses</h4>
+            <p>
+                The chord chart is a way to display relationships or network flows in a pleasing layout. It works well
+                for bidirectional
+                relationships, such as energy flows, resources, or economic data. The chords travel between categories
+                and change in width
+                depending on the values. The chord's source value determines the color here, letting you know which way
+                the flow is
+                greater from.
+            </p>
+            <h4>Marks and Channels</h4>
+            <ul>
+                <li><strong>Marks:</strong> Lines</li>
+                <li><strong>Channels:</strong> Color Hue, Width</li>
+            </ul>
+        </section>
+    </main>
+    <script src='chordchatrt.js'></script>
+</body>
+
+</html>

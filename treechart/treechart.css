@@ -1,0 +1,11 @@
+svg {
+    display:block;
+    margin-left:0px;
+  }
+  
+  .lines {
+    fill:none;
+    stroke: rgb(80, 83, 81);
+    stroke-opacity: 0.5;
+    stroke-width: 1.25;
+  }

@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Source+Sans+Pro&display=swap');
+
+body {
+    font-family: "Source Sans Pro";
+    font: 12pt;
+    line-height: 1.7rem;
+    margin: 0px;
+}
+svg {
+  display: block;
+  margin: auto;
+  padding: 20px;
+  margin-left: 40px;
+}
+
+main {
+  width: 800px;
+  margin: auto;
+  padding-bottom: 60px;
+}
+
+/* 
+Begin Code Used from Previous Project. Slightly changed to fit 
+Found here: https://project-3-ac.herokuapp.com/
+Not entirely sure if that project still works as I think my Redis account expired.
+Also it's not responsive - woo. That's a future Andrew task
+*/
+header {
+  font-family: "Lato", sans-serif;
+  text-align: left;
+  height: 100%;
+  width: 140px;
+  top:0px;
+  position:fixed;
+  display: flex;
+  align-items: left;
+  background-color: rgb(44, 44, 44);
+}
+
+header a {
+  font-size: 1rem;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border: 1px solid rgb(255, 255, 255);
+  margin: 4px 2px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  text-align:center;
+  display: inline-block;
+}
+
+header a:hover{
+  background: linear-gradient(to right, #c6ffdd, #fbd786, #f7797d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+header li{
+  display: inline;
+}
+
+header ul{
+  margin: 0px;
+  padding: 5px;
+}
+
+/* End */
+
+.chart-div {
+  text-align: left;
+  margin:auto;
+  padding:10px;
+}
+
+.axis-left1 line, 
+.axis-left1 path {
+  stroke: none;
+}
+
+.axis-left1 text {
+  font-weight: bold;
+  font-size: 7pt;
+  text-transform: uppercase;
+}
+
+#tooltip {
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: rgb(75, 71, 71);
+  color: white;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#tooltip.hidden {
+  display: none;
+}
+
+#tooltip p {
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.arc text {
+  fill:white;
+}
+
+

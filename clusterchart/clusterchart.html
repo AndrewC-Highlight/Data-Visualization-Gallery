@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>D3 Chart Gallery</title>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+    <link rel="stylesheet" href="../src/main.css">
+    <link rel="stylesheet" href="clusterchart.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../src/main.html">Home</a></li>
+                <li><a href="../barchart/barchart.html">Bar Chart</a></li>
+                <li><a href="../linechart/linechart.html">Line Chart</a></li>
+                <li><a href="../areachart/areachart.html">Area Chart</a></li>
+                <li><a href="../scatterplot/scatterplot.html">Scatter Plot</a></li>
+                <li><a href="../piechart/piechart.html">Pie Chart</a></li>
+                <li><a href="../donutchart/donutchart.html">Donut Chart</a></li>
+                <li><a href="../stackbarchart/stackbarchart.html">Stacked Bar</a></li>
+                <li><a href="../stackareachart/stackareachart.html">Stacked Area</a></li>
+                <li><a href="../chordchart/chordchart.html">Chord Chart</a></li>
+                <li><a href="../forcegraph/forcegraph.html">Force Graph</a></li>
+                <li><a href="../clusterchart/clusterchart.html">Cluster Chart</a></li>
+                <li><a href="../packchart/pack.html">Packed Circles</a></li>
+                <li><a href="../partition/partition.html">Partition</a></li>
+                <li><a href="../treechart/treechart.html">Tree</a></li>
+                <li><a href="../treemap/treemap.html">Tree Map</a></li>
+                <li><a href="../choropleth/choropleth.html">Choropleth</a></li>
+                <li><a href="../candlestick/candlestick.html">Candlestick</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Cluster Chart</h1>
+            <h4>Examining the hierarchy of sample news coverage categories of The New York Times</h4>
+            <div class='chart-div'>
+                <svg id='chart'></svg>
+            </div>
+        </section>
+        <section>
+            <h3>The Cluster Chart</h3>
+            <p>
+                This cluster chart uses the same made-up data from the force graph, but in a different way.
+                It forgoes the interactivity, and instead establishes the visual hierarchy through a series
+                of parents and children with connecting lines to display the relationship. It pushes leaf nodes at the
+                same depth as well.
+                Again this chart is showing just a few categories and subcategories of news coverage.
+                <br><em>I chose not to include a legend here, as I didn't think it necessarily needed it, with the color
+                    hue
+                    just helping identify the depth of a node.</em>
+            </p>
+            <h4>Cluster Chart Uses</h4>
+            <p>
+                The cluster chart/dendrogram is similar to a force graph's goals, but executed differrently. It is a
+                hierarchy tree
+                representing different clustering relationships. A series of parents and children form the tree, and
+                this graph
+                can be useful for such things as evolution clusters, animal groups, or code library dependencies.
+            </p>
+            <h4>Marks and Channels</h4>
+            <ul>
+                <li><strong>Marks:</strong> Lines, Point, Connection</li>
+                <li><strong>Channels:</strong> Color Hue, Length</li>
+            </ul>
+        </section>
+    </main>
+    <script src='clusterchart.js'></script>
+</body>
+
+</html>

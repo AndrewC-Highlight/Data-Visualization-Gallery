@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang='en'>
+
+<head>
+    <title>D3 Chart Gallery</title>
+    <meta charset="utf-8">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-legend/2.25.6/d3-legend.js"></script>
+    <link rel="stylesheet" href="../src/main.css">
+    <link rel="stylesheet" href="./treechart.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="../src/main.html">Home</a></li>
+                <li><a href="../barchart/barchart.html">Bar Chart</a></li>
+                <li><a href="../linechart/linechart.html">Line Chart</a></li>
+                <li><a href="../areachart/areachart.html">Area Chart</a></li>
+                <li><a href="../scatterplot/scatterplot.html">Scatter Plot</a></li>
+                <li><a href="../piechart/piechart.html">Pie Chart</a></li>
+                <li><a href="../donutchart/donutchart.html">Donut Chart</a></li>
+                <li><a href="../stackbarchart/stackbarchart.html">Stacked Bar</a></li>
+                <li><a href="../stackareachart/stackareachart.html">Stacked Area</a></li>
+                <li><a href="../chordchart/chordchart.html">Chord Chart</a></li>
+                <li><a href="../forcegraph/forcegraph.html">Force Graph</a></li>
+                <li><a href="../clusterchart/clusterchart.html">Cluster Chart</a></li>
+                <li><a href="../packchart/pack.html">Packed Circles</a></li>
+                <li><a href="../partition/partition.html">Partition</a></li>
+                <li><a href="../treechart/treechart.html">Tree</a></li>
+                <li><a href="../treemap/treemap.html">Tree Map</a></li>
+                <li><a href="../choropleth/choropleth.html">Choropleth</a></li>
+                <li><a href="../candlestick/candlestick.html">Candlestick</a></li>
+                <li><a href="../map/map.html">Map</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Tree Chart</h1>
+            <h4>Examining the hierarchy of sample news coverage categories of The New York Times</h4>
+            <div class='chart-div'>
+                <svg id='chart'></svg>
+            </div>
+        </section>
+        <section>
+            <h3>Tree</h3>
+            <p>
+                This tree chart is using almost exactly the same data from the cluster chart to focus on highlighting
+                the rather minor difference between the two charts (some data was changed to further highlight it; see
+                Boroughs not having
+                a child now). Again, this means the chart is displaying the hierarchy of how a small sample of different
+                topics are categorized
+                in the news.
+                <em>A legend was omitted, as the color hue is primarily used to help display the level in the
+                    hierarchy</em>
+            </p>
+            <h4>Tree Chart Uses</h4>
+            <p>
+                The tree chart has many similarities to the cluster chart. It's still being used to show a
+                visual hierarchy in a node based system with parents/children. However, some differences exist, the most
+                important one being that the leafs are not put onto the same level regardless of their depth. In the
+                tree map, leafs are
+                placed and end where their natural depth is, as can be seen in how the "Boroughs" node ends at the same
+                depth as
+                the "Asia" node below it, despite not having a child leaf. The tree chart can also have different use
+                cases, such as
+                being used for instructions or procedures, to show potential steps that are shorter or longer in
+                comparison to others, and knowing
+                exactly where certain steps end in comparison to others.
+            </p>
+            <h4>Marks and Channels</h4>
+            <ul>
+                <li><strong>Marks:</strong> Lines, Point, Connection</li>
+                <li><strong>Channels:</strong> Color Hue, Length</li>
+            </ul>
+        </section>
+    </main>
+    <script src='treechart.js'></script>
+</body>
+
+</html>
